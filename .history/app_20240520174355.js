@@ -1,0 +1,2 @@
+import {dataMovie} from './dataListMovies'
+

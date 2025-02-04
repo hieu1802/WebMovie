@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+   box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 1000px;
+    background-image: url(./img/backgroundMovie.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+                        /**************** CSS HEADER*********************/
+
+header{
+    position: relative;
+    width: 80%;
+    height: 90%;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 5px 25px -1px #000;
+}
+
+header::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+   
+    opacity: .9;
+    z-index: -1;
+}
+
+
+
+header video{
+    position: absolute;
+    width: 120%;
+    height: 190%;
+    top: -47%;
+    left: -10%;
+    z-index: -1;
+}
+
+header nav{
+    width: 100%;
+    height: 10%;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px;
+}
+
+header nav .logo_Ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav .logo_Ul img{
+    width: 200px;
+    height: 90px;
+}
+
+header nav .logo_Ul ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+header nav .logo_Ul ul li{
+    padding: 5px 15px;
+}
+
+header nav .logo_Ul ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    transition: .3s linear;
+}
+
+header nav .logo_Ul ul li a:hover{
+    color: #e20f0f;
+}
+
+header nav .search_avatar{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav .search_movie input{
+    border-radius: 20px;
+    border: 1px solid #000;
+    outline: none;
+    margin-right:10px ;
+    padding: 15px 50px;
+}
+
+.search_movie > input:focus ~ .search{
+    display: block;
+}
+
+
+.avatar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.avatar img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.search{
+    position: absolute;
+    width: 270px;
+    height: 250px;
+    border: 1px solid #aa8317;
+    background-color: #ffffff;
+    border-radius: 5%;
+    top: 62px;
+    z-index: 9999;
+    overflow-y: auto;
+
+    display: none;
+    
+}
+
+header nav .search_movie .search .card{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    color: #000;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 3px 15px;
+    text-decoration: none;
+}
+
+header nav .search_movie .search .card img{
+    width: 50px;
+    height: 98%;
+    border-radius: 2px;
+}
+
+header nav .search_movie .search .card .content{
+    margin-left: 10px;
+    color: #000;
+}
+
+header nav .search_movie .search .card .content h3{
+    font-size: 15px;
+    line-height: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+
+header nav .search_movie .search .card .content p{
+    font-size: 12px;
+}
+
+header nav .search_movie .search .card .content span{
+    padding: 0px 3px;
+    margin: 0px 5px;
+    font-weight: 500;
+}
+
+header .box_Content{
+    position: relative;
+    color: #fff;
+    margin-top: 70px;
+    margin-left: 50px;
+}
+
+header .box_Content h1{
+    font-size: 50px;
+}
+
+header .box_Content p{
+    font-size: 15px;
+    width: 350px;
+    letter-spacing: 3px;
+    background-color: #e20f0f;
+    border-radius: 8px;
+}
+
+header .box_Content .details{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+header .box_Content .details h6,
+header .box_Content .details h4,
+header .box_Content .details h3
+{
+    font-size: 17px;
+    color: #fff;
+    margin-right: 10px;
+}
+
+header .box_Content .details h5{
+    font-size: 17px;
+    color: rgb(177, 11, 20);
+    margin-right: 10px;
+    background-color: #fff;
+    padding: 0px 10px;
+}
+
+header .box_Content .details h3 span{
+    margin-right: 5px;
+}
+
+header .box_Content .box_Content_Btn{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+header .box_Content .box_Content_Btn a{
+    padding: 8px 12px;
+    font-size: 20px;
+    font-weight: 600;
+    background: linear-gradient(45deg, #00bdff, #0079ff);
+    border-radius: 5px;
+    color: #fff;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.popularMoive{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    color: #fff;
+    padding: 0px 50px;
+    bottom: 20px;
+}
+
+.sectionCardMovie{
+    position: relative;
+    width: 100%;
+    height: 220px;
+    
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+
+
+
+
+.cardPopular{
+    
+   
+    cursor: pointer;
+    display: flex;
+    min-width: 150px;
+    height: 200px;
+    margin: 0px 20px;
+    border-radius: 8px;
+    background: #000;
+    border: 1px solid #fff;
+    transition: .3s linear;
+}
+
+
+
+.posterMovie{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.popularMoive h4{
+    font-size: 25px;
+}
+
+.cardPopular img{
+    width: 200px;
+    height: 100%;
+}
+
+
+
+.resetCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   width: 200px;
+    height: 100%;
+    text-align: left;
+    color: #000;
+    background-color: #fff;
+    padding: 0px 20px;
+   
+}
+
+.resetCard > h4 {
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    color: #e20f0f;
+}
+
+.resetCard p {
+    font-size: 12px;
+}
+
+.btnCards{
+    padding: 8px 10px;
+    font-size: 17px;
+    font-weight: 400;
+    background: linear-gradient(45deg, #00bdff, #0079ff);
+    border-radius: 5px;
+    color: #fff;
+    margin-left: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+
+/************ STYLE SERIES MOVIE****************/
+.container{
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    display: flex;
+}
+
+.boxSeriesMovies{
+    width: 250px;
+    height: 350px;
+    border-radius: 8px;
+    border: 1px solid #fff; 
+   
+}
+.boxSeriesMovies img{
+    width: 100%;
+    height: 75%;
+    border-radius: 8px;
+}
+
+.contentSeries{
+    width: 100%;
+    height: 25%;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+}

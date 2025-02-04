@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+   box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 1000px;
+    background: rgb(28, 27, 27);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+                        /**************** CSS HEADER*********************/
+
+header{
+    position: relative;
+    width: 80%;
+    height: 90%;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 5px 25px -1px #000;
+}
+
+header::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('/img/Tetolangdianguc.webp') no-repeat center center/cover;
+    opacity: .9;
+    z-index: -1;
+}
+
+header::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,transparent,#000);
+    z-index: -1;
+}
+
+header video{
+    position: absolute;
+    width: 120%;
+    height: 190%;
+    top: -47%;
+    left: -10%;
+    z-index: -1;
+}
+
+header nav{
+    width: 100%;
+    height: 10%;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px;
+}
+
+header nav .logo_Ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav .logo_Ul img{
+    width: 200px;
+    height: 90px;
+}
+
+header nav .logo_Ul ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+header nav .logo_Ul ul li{
+    padding: 5px 15px;
+}
+
+header nav .logo_Ul ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    transition: .3s linear;
+}
+
+header nav .logo_Ul ul li a:hover{
+    color: #e20f0f;
+}
+
+header nav .search_movie{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav .search_movie input{
+    border-radius: 20px;
+    border: 1px solid #000;
+    outline: none;
+    margin-right:10px ;
+    padding: 15px 25px;
+}
+
+
+header nav .search_movie .avatar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .search_movie .avatar img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+header nav .search_movie .search{
+    position: absolute;
+    width: 220px;
+    height: 250px;
+    border: 1px solid #aa8317;
+    background-color: #ffffff;
+    border-radius: 5%;
+    right: 200px;
+    top: 60px;
+    z-index: 9999;
+}
+
+header nav .search_movie .search .card{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    color: #000;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 3px 15px;
+    text-decoration: none;
+}
+
+header nav .search_movie .search .card img{
+    width: 50px;
+    height: 98%;
+    border-radius: 2px;
+}
+
+header nav .search_movie .search .card .content{
+    margin-left: 10px;
+    color: #000;
+}
+
+header nav .search_movie .search .card .content h3{
+    font-size: 15px;
+    line-height: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
